@@ -15,15 +15,19 @@ FastApi + SQLite апи для хранения заметок.
 Создать заметку (POST /notes/):
 
 `curl -X POST "http://localhost:8000/notes/" -H "Content-Type: application/json" -d '{"title":"Заголовок","content":"Содержание"}'`
+
 Получить все заметки (GET /notes/):
 
 `curl "http://localhost:8000/notes/"`
+
 Получить заметку по ID (GET /notes/{id}):
 
 `curl "http://localhost:8000/notes/1"`
+
 Обновить заметку (PUT /notes/{id}):
 
 `curl -X PUT "http://localhost:8000/notes/1" -H "Content-Type: application/json" -d '{"title":"Новый заголовок","content":"Новое содержание"}'`
+
 Удалить заметку (DELETE /notes/{id}):
 
 `curl -X DELETE "http://localhost:8000/notes/1"`
