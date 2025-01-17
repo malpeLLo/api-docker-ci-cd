@@ -1,7 +1,14 @@
 import pytest
 from fastapi.testclient import TestClient
-from main import app
+from main import app, init_db
 client = TestClient(app)
+
+@pytest.fixture(autouse=True)
+def setup_database():
+    init_db()
+    yield
+    # После каждого теста база данных будет пересоздана
+
 def test_create_note():
     response = client.post(
         "/notes/",
