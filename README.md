@@ -29,3 +29,7 @@ FastApi + SQLite апи для хранения заметок.
 `curl -X DELETE "http://localhost:8000/notes/1"`
 
 Также вы можете использовать автоматическую документацию API по адресу http://localhost:8000/docs, где можно тестировать все эндпоинты через веб-интерфейс.
+
+Все тесты проходит успешно:)
+![image](https://github.com/user-attachments/assets/991b19e0-4c82-49a8-804a-abde5e316fca)
+
